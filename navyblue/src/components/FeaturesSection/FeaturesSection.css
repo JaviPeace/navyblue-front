@@ -1,0 +1,117 @@
+.features-section {
+  padding-top: 64px;
+  padding-bottom: 64px;
+  position: relative;
+}
+
+@media (min-width: 900px) {
+  .features-section {
+    padding-top: 96px;
+    padding-bottom: 96px;
+  }
+}
+
+/* Status Label */
+.features-section__status {
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.features-section__status-text {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 0.625rem;
+  font-family: monospace;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+/* Section Title */
+.features-section__header {
+  text-align: center;
+  margin-bottom: 64px;
+}
+
+.features-section__title-line1 {
+  color: white;
+  font-size: 1.25rem;
+  font-weight: 300;
+  font-style: italic;
+  margin-bottom: 8px;
+}
+
+@media (min-width: 900px) {
+  .features-section__title-line1 {
+    font-size: 1.5rem;
+  }
+}
+
+.features-section__title-line2 {
+  color: white;
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
+@media (min-width: 900px) {
+  .features-section__title-line2 {
+    font-size: 1.5rem;
+  }
+}
+
+.features-section__highlight {
+  color: #00d9ff;
+  font-weight: 600;
+}
+
+/* Feature Card */
+.feature-card {
+  border: 1px solid rgba(0, 217, 255, 0.15);
+  background-color: rgba(13, 33, 55, 0.5);
+  padding: 24px;
+  height: 100%;
+  transition: all 0.3s ease;
+}
+
+@media (min-width: 900px) {
+  .feature-card {
+    padding: 32px;
+  }
+}
+
+.feature-card:hover {
+  border-color: rgba(0, 217, 255, 0.3);
+  background-color: rgba(13, 33, 55, 0.8);
+  transform: translateY(-4px);
+}
+
+.feature-card__icon-wrapper {
+  margin-bottom: 24px;
+  display: inline-flex;
+  padding: 12px;
+  border: 1px solid rgba(0, 217, 255, 0.2);
+  background-color: rgba(0, 217, 255, 0.05);
+}
+
+.feature-card__icon {
+  color: #00d9ff;
+  font-size: 24px;
+}
+
+.feature-card__title {
+  color: white;
+  margin-bottom: 16px;
+  font-weight: 700;
+  font-size: 0.875rem;
+  line-height: 1.4;
+}
+
+@media (min-width: 900px) {
+  .feature-card__title {
+    font-size: 0.9375rem;
+  }
+}
+
+.feature-card__description {
+  color: rgba(255, 255, 255, 0.7);
+  line-height: 1.7;
+  font-size: 0.875rem;
+}

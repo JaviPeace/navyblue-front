@@ -1,0 +1,22 @@
+.landing-page {
+  min-height: 100vh;
+  background-color: #0a1929;
+  position: relative;
+  overflow: hidden;
+}
+
+.landing-page__grid-bg {
+  position: fixed;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(0, 217, 255, 0.02) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 217, 255, 0.02) 1px, transparent 1px);
+  background-size: 80px 80px;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.landing-page__content {
+  position: relative;
+  z-index: 1;
+}

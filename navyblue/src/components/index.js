@@ -1,0 +1,9 @@
+export { default as Navbar } from './Navbar/Navbar';
+export { default as HeroSection } from './HeroSection/HeroSection';
+export { default as BenefitsSection } from './BenefitsSection/BenefitsSection';
+export { default as FeaturesSection } from './FeaturesSection/FeaturesSection';
+export { default as HowItWorksSection } from './HowItWorksSection/HowItWorksSection';
+export { default as VideoSection } from './VideoSection/VideoSection';
+export { default as TargetAudienceSection } from './TargetAudienceSection/TargetAudienceSection';
+export { default as CTASection } from './CTASection/CTASection';
+export { default as Footer } from './Footer/Footer';

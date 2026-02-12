@@ -1,0 +1,31 @@
+.footer {
+  padding: 32px 0;
+  border-top: 1px solid rgba(0, 217, 255, 0.1);
+}
+
+.footer__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.footer__social {
+  display: flex;
+  gap: 8px;
+}
+
+.footer__social-button {
+  color: rgba(255, 255, 255, 0.5);
+  transition: color 0.3s;
+}
+
+.footer__social-button:hover {
+  color: #00d9ff;
+}
+
+.footer__copyright {
+  color: rgba(255, 255, 255, 0.3);
+  font-size: 0.75rem;
+  letter-spacing: 0.02em;
+}
