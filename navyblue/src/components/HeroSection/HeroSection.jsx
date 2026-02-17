@@ -1,26 +1,37 @@
 import React from 'react';
 import { Box, Container, Typography, Button } from '@mui/material';
+import { useNavigate } from 'react-router-dom';
+import BlurBlob from '../BlurryElement/blurryElement';
+import Navbar from '../Navbar/Navbar';
 import './HeroSection.css';
 
 const HeroSection = () => {
+  const navigate = useNavigate();
   // Placeholder logos for trust section
   const logos = Array(5).fill(null);
 
   return (
     <Box className="hero">
+      {/* Blurry Decorative Element - Top Right */}
+      <Box className="hero__blur-container">
+        <BlurBlob />
+      </Box>
+
+      {/* Navbar integrated into hero */}
+      <Navbar />
+
       {/* Grid Background */}
       <Box className="hero__grid-bg" />
 
       {/* Decorative elements */}
       <Box className="hero__dots-left" />
-      <Box className="hero__line-left" />
       <Box className="hero__line-right" />
 
       {/* Version tag */}
-      <Typography className="hero__version">VERSION : V1.7</Typography>
+      <Typography variant="body2" className="hero__version">VERSION : V1.7</Typography>
 
       {/* Coordinates */}
-      <Typography className="hero__coordinates">LAT 35.4 · LON 78.9</Typography>
+      <Typography variant="body2" className="hero__coordinates">LAT 35.4 · LON 78.9</Typography>
 
       <Container maxWidth="md">
         <Box className="hero__content">
@@ -29,7 +40,7 @@ const HeroSection = () => {
             Podrías contratar más gente,
           </Typography>
 
-          <Typography variant="h2" className="hero__title-line2">
+          <Typography variant="h1" className="hero__title-line2">
             O CONTRATAR NAVYBLUE
           </Typography>
 
@@ -43,7 +54,7 @@ const HeroSection = () => {
           </Box>
 
           {/* Subtitle */}
-          <Typography variant="body1" className="hero__subtitle">
+          <Typography className="hero__subtitle" sx={{ textAlign: 'center', maxWidth: '500px', mx: 'auto' }}>
             Automatizamos el trabajo de tu backoffice para escalar volumen sin
             contratar más gente ni gastar tu tiempo en lo repetitivo
           </Typography>
@@ -53,7 +64,12 @@ const HeroSection = () => {
             <Button variant="contained" size="large" className="hero__btn-primary">
               CUÉNTANOS TU PROCESO
             </Button>
-            <Button variant="outlined" size="large" className="hero__btn-secondary">
+            <Button 
+              variant="outlined" 
+              size="large" 
+              className="hero__btn-secondary"
+              onClick={() => navigate('/login')}
+            >
               [ INICIAR SESIÓN ]
             </Button>
           </Box>
@@ -61,7 +77,7 @@ const HeroSection = () => {
           {/* Trust Section - Companies */}
           <Box className="hero__trust">
             <Typography className="hero__trust-label">
-              // EMPRESAS QUE YA HAN CONFIADO EN NOSOTROS
+              {'// EMPRESAS QUE YA HAN CONFIADO EN NOSOTROS'}
             </Typography>
             <Box className="hero__trust-logos">
               {logos.map((_, index) => (
@@ -79,9 +95,9 @@ const HeroSection = () => {
       </Container>
 
       {/* Bottom labels */}
-      <Typography className="hero__label-left">SYS_ACTIVE</Typography>
-      <Typography className="hero__label-center">TONE: UI/XI</Typography>
-      <Typography className="hero__label-right">A00</Typography>
+      <Typography variant="body2" className="hero__label-left">SYS_ACTIVE</Typography>
+      <Typography variant="body2" className="hero__time-right">TIME 03:42</Typography>
+      <Typography variant="body2" className="hero__label-right">A20</Typography>
     </Box>
   );
 };

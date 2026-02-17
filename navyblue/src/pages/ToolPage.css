@@ -1,0 +1,153 @@
+/* ==============================
+   TOOL PAGE
+   ============================== */
+
+.toolpage {
+  position: relative;
+  min-height: 100vh;
+  background-color: #9099A4;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+/* ==============================
+   BODY — Two panels
+   ============================== */
+
+.toolpage__body {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  gap: 24px;
+  padding: 32px 40px 0 40px;
+  flex: 1;
+  min-height: 0;
+}
+
+
+/* ==============================
+   WATERMARK
+   ============================== */
+
+.toolpage__watermark {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  pointer-events: none;
+}
+
+.toolpage__watermark-img {
+  width: 420px;
+  height: auto;
+  opacity: 0.12;
+  filter: brightness(0) invert(1);
+}
+
+/* ==============================
+   FOOTER
+   ============================== */
+
+.toolpage__footer {
+  position: relative;
+  z-index: 3;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 40px 28px 40px;
+  flex-shrink: 0;
+}
+
+/* User avatar circle — left */
+.toolpage__footer-user {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  border: 1.5px solid rgba(30, 59, 75, 0.2);
+  background: rgba(30, 59, 75, 0.08);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background 0.25s, border-color 0.25s;
+}
+
+.toolpage__footer-user:hover {
+  background: rgba(30, 59, 75, 0.15);
+  border-color: rgba(30, 59, 75, 0.35);
+}
+
+.toolpage__footer-user-icon {
+  font-size: 24px !important;
+  color: rgba(30, 59, 75, 0.45);
+}
+
+/* Ship logo — center */
+.toolpage__footer-logo {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  border: 1.5px solid rgba(30, 59, 75, 0.2);
+  background: rgba(30, 59, 75, 0.08);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.toolpage__footer-logo-img {
+  width: 36px;
+  height: 36px;
+  object-fit: contain;
+  opacity: 0.5;
+}
+
+/* Status — right */
+.toolpage__footer-status {
+  text-align: right;
+}
+
+.toolpage__footer-status-text {
+  font-family: 'Space Grotesk', monospace !important;
+  font-size: 10px !important;
+  letter-spacing: 2px !important;
+  color: #C1CDD1!important;
+}
+
+.toolpage__footer-copy {
+  font-family: 'Space Grotesk', monospace !important;
+  font-size: 10px !important;
+  letter-spacing: 2px !important;
+  color: #C1CDD1!important;
+  margin-top: 2px !important;
+}
+
+/* ==============================
+   RESPONSIVE
+   ============================== */
+
+@media (max-width: 900px) {
+  .toolpage__body {
+    flex-direction: column;
+    padding: 20px 16px 0 16px;
+  }
+
+  .toolpage__panel--left {
+    max-width: 100%;
+  }
+
+  .toolpage__panel--right {
+    min-height: 200px;
+  }
+
+  .toolpage__footer {
+    padding: 16px 20px 24px 20px;
+  }
+
+  .toolpage__watermark-img {
+    width: 260px;
+  }
+}

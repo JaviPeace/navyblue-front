@@ -4,9 +4,9 @@ const theme = createTheme({
   palette: {
     mode: 'dark',
     primary: {
-      main: '#00D9FF',
-      light: '#5CE1FF',
-      dark: '#00A8C7',
+      main: '#495B69',
+      light: '#6B7D8A',
+      dark: '#344450',
     },
     secondary: {
       main: '#1A2B3C',
@@ -18,12 +18,12 @@ const theme = createTheme({
       paper: '#0D2137',
     },
     text: {
-      primary: '#FFFFFF',
-      secondary: '#8BA3B8',
+      primary: '#CCD0CF',
+      secondary: '#CCD0CF',
     },
   },
   typography: {
-    fontFamily: '"Inter", "Roboto", "Helvetica", "Arial", sans-serif',
+    fontFamily: '"Space Grotesk", sans-serif',
     h1: {
       fontWeight: 300,
       fontSize: '2.5rem',
@@ -41,23 +41,29 @@ const theme = createTheme({
       },
     },
     h3: {
-      fontWeight: 700,
-      fontSize: '1rem',
+      fontWeight: 400,
+      fontSize: '2.25rem',
       letterSpacing: '0.1em',
       textTransform: 'uppercase',
     },
     h4: {
-      fontWeight: 700,
-      fontSize: '0.875rem',
-      letterSpacing: '0.05em',
+      fontWeight: 400,
+      fontSize: '1.4 rem',
+      letterSpacing: '0.1em',
       textTransform: 'uppercase',
     },
+    h5: {
+      fontWeight: 400,
+      fontSize: '1.6 rem',
+      letterSpacing: '0.1em',
+    },
     body1: {
-      fontSize: '0.9375rem',
+      fontSize: '1.1rem',
       lineHeight: 1.6,
+      textAlign: 'inherit',
     },
     body2: {
-      fontSize: '0.8125rem',
+      fontSize: '0.875rem',
       lineHeight: 1.5,
       color: '#8BA3B8',
     },

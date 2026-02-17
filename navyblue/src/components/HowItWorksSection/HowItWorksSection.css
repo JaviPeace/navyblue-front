@@ -25,6 +25,20 @@
   }
 }
 
+/* Steps Grid */
+.steps-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+@media (min-width: 900px) {
+  .steps-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+  }
+}
+
 /* Step Card */
 .step-card {
   background-color: transparent;
@@ -44,18 +58,18 @@
   align-items: center;
   justify-content: center;
   margin-bottom: 24px;
-  border: 1px solid rgba(0, 217, 255, 0.25);
-  background-color: rgba(0, 217, 255, 0.04);
+  border: 1px solid #495B69;
+  background-color: #11212E;
 }
 
 .step-card__icon {
-  color: #00d9ff;
+  color: #97A5A8;
   font-size: 24px;
 }
 
 .step-card__title {
   color: white;
-  font-size: 0.875rem;
+  font-size: 1.4rem;
   font-weight: 700;
   margin-bottom: 12px;
   letter-spacing: 0.02em;

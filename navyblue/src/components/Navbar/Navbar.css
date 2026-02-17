@@ -1,7 +1,7 @@
 .navbar {
-  background-color: rgba(10, 25, 41, 0.9);
-  backdrop-filter: blur(10px);
-  border-bottom: 1px solid rgba(0, 217, 255, 0.1);
+  background-color: transparent !important;
+  box-shadow: none !important;
+  padding-top: 16px;
 }
 
 .navbar__toolbar {
@@ -36,7 +36,8 @@
 }
 
 .navbar__nav-link:hover {
-  color: #00d9ff;
+  color: #495B69;
+;
 }
 
 .navbar__actions {
@@ -46,7 +47,7 @@
 }
 
 .navbar__btn-outline {
-  color: white;
+  color: #CCD0CF;
   border-color: rgba(255, 255, 255, 0.3);
   font-size: 0.75rem;
   letter-spacing: 0.05em;
@@ -60,8 +61,8 @@
 }
 
 .navbar__btn-primary {
-  background-color: #00d9ff;
-  color: #0a1929;
+  background-color: #495B69;
+  color: #CCD0CF;
   font-size: 0.75rem;
   font-weight: 600;
   letter-spacing: 0.05em;
@@ -70,7 +71,8 @@
 }
 
 .navbar__btn-primary:hover {
-  background-color: #33e1ff;
+  border-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.5);
 }
 
 .navbar__menu-button {
@@ -107,7 +109,8 @@
 }
 
 .navbar__drawer-link:hover {
-  color: #00d9ff;
+  color: #495B69;
+
 }
 
 .navbar__drawer-item-text {
@@ -115,7 +118,7 @@
 }
 
 .navbar__drawer-item-text .MuiListItemText-primary {
-  font-size: 0.875rem;
+  font-size: 1.4rem;
   letter-spacing: 0.1em;
 }
 
@@ -134,7 +137,8 @@
 }
 
 .navbar__drawer-btn-primary {
-  background-color: #00d9ff;
+  background-color: #495B69;
+;
   color: #0a1929;
   font-weight: 600;
 }

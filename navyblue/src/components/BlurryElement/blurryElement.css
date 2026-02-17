@@ -1,0 +1,28 @@
+.blur-blob {
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  top: -100px;
+  right: -100px;
+  border-radius: 50%;
+  opacity: 0.4;
+  background: radial-gradient(
+    circle at 50% 50%,
+    #9CB4BC 0%,
+    #495B69 40%,
+    #152532 100%
+  );
+  filter: blur(80px);
+  pointer-events: none;
+  z-index: 1;
+}
+
+@media (max-width: 900px) {
+  .blur-blob {
+    width: 300px;
+    height: 300px;
+    top: -50px;
+    right: -50px;
+  }
+}
+

@@ -13,7 +13,7 @@
 .trust-section__label {
   color: rgba(255, 255, 255, 0.5);
   font-size: 0.75rem;
-  font-family: monospace;
+  font-family: 'Space Grotesk', sans-serif;
   letter-spacing: 0.1em;
   text-align: center;
   margin-bottom: 32px;

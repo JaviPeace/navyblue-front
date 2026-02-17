@@ -8,12 +8,12 @@ const CTASection = () => {
       <Container maxWidth="md">
         <Box className="cta-section__content">
           {/* Title */}
-          <Typography variant="h2" className="cta-section__title">
+          <Typography variant="h3" className="cta-section__title">
             ¿LISTO PARA EVOLUCIONAR?
           </Typography>
 
           {/* Subtitle */}
-          <Typography className="cta-section__subtitle">
+          <Typography variant="body1" className="cta-section__subtitle">
             Cuéntanos qué proceso quieres automatizar y te mostramos cómo NavyBlue puede ayudarte
           </Typography>
 

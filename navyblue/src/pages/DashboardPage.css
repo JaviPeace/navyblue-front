@@ -1,0 +1,441 @@
+/* ==============================
+   DASHBOARD PAGE
+   ============================== */
+
+.dashboard {
+  position: relative;
+  min-height: 100vh;
+  background-color: #495B69;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+/* Grid background */
+.dashboard__grid-bg {
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+  background-size: 60px 60px;
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* ==============================
+   DECORATIVE HUD ELEMENTS
+   ============================== */
+
+/* Spinner — left side */
+.dashboard__spinner {
+  position: absolute;
+  left: 60px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 120px;
+  height: 120px;
+  z-index: 1;
+  animation: dashSpin 20s linear infinite;
+}
+
+@keyframes dashSpin {
+  to {
+    transform: translateY(-50%) rotate(360deg);
+  }
+}
+
+.dashboard__spinner-dot {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 4px;
+  height: 4px;
+  margin: -2px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.25);
+  transform-origin: 0 0;
+}
+
+/* Dots top-right */
+.dashboard__dots-tr {
+  position: absolute;
+  top: 70px;
+  right: 70px;
+  width: 20px;
+  height: 20px;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.3) 2px, transparent 2px);
+  background-size: 8px 8px;
+  z-index: 1;
+}
+
+/* Labels */
+.dashboard__label-tl {
+  position: absolute;
+  top: 30px;
+  left: 40px;
+  font-family: 'Space Grotesk', monospace;
+  font-size: 10px;
+  letter-spacing: 2px;
+  color: rgba(255, 255, 255, 0.25);
+  z-index: 1;
+}
+
+.dashboard__dot-indicator {
+  position: absolute;
+  top: 33px;
+  left: 130px;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.3);
+  z-index: 1;
+}
+
+.dashboard__label-time {
+  position: absolute;
+  top: 30px;
+  right: 130px;
+  font-family: 'Space Grotesk', monospace;
+  font-size: 10px;
+  letter-spacing: 2px;
+  color: rgba(255, 255, 255, 0.25);
+  z-index: 1;
+}
+
+.dashboard__line-right {
+  position: absolute;
+  top: 70px;
+  right: 40px;
+  width: 1px;
+  height: 120px;
+  background: rgba(255, 255, 255, 0.08);
+  z-index: 1;
+}
+
+.dashboard__label-code {
+  position: absolute;
+  top: 200px;
+  right: 34px;
+  font-family: 'Space Grotesk', monospace;
+  font-size: 10px;
+  letter-spacing: 2px;
+  color: rgba(255, 255, 255, 0.2);
+  z-index: 1;
+}
+
+/* Bottom left */
+.dashboard__label-bl {
+  position: absolute;
+  bottom: 30px;
+  left: 40px;
+  font-family: 'Space Grotesk', monospace;
+  font-size: 10px;
+  letter-spacing: 2px;
+  color: rgba(255, 255, 255, 0.2);
+  z-index: 1;
+}
+
+/* Ticker — bottom center */
+.dashboard__ticker {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 6px;
+  z-index: 1;
+}
+
+.dashboard__ticker-mark {
+  width: 1px;
+  height: 8px;
+  background: rgba(255, 255, 255, 0.12);
+}
+
+.dashboard__ticker-mark:nth-child(5n) {
+  height: 14px;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/* Bottom right */
+.dashboard__label-br {
+  position: absolute;
+  bottom: 24px;
+  right: 40px;
+  text-align: right;
+  z-index: 1;
+}
+
+.dashboard__label-status {
+  font-family: 'Space Grotesk', monospace;
+  font-size: 10px;
+  letter-spacing: 2px;
+  color: rgba(255, 255, 255, 0.25);
+}
+
+.dashboard__label-copy {
+  font-family: 'Space Grotesk', monospace;
+  font-size: 10px;
+  letter-spacing: 2px;
+  color: rgba(255, 255, 255, 0.15);
+  margin-top: 2px;
+}
+
+/* ==============================
+   MAIN CONTAINER
+   ============================== */
+
+.dashboard__container {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* ==============================
+   GREETING
+   ============================== */
+
+.dashboard__greeting {
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.dashboard__greeting-hello {
+  font-family: 'Space Grotesk', sans-serif !important;
+  font-size: 14px !important;
+  font-weight: 400 !important;
+  letter-spacing: 4px !important;
+  color: rgba(255, 255, 255, 0.5) !important;
+  margin-bottom: 8px !important;
+}
+
+.dashboard__greeting-question {
+  font-family: 'Space Grotesk', sans-serif !important;
+  font-size: 24px !important;
+  font-weight: 600 !important;
+  letter-spacing: 3px !important;
+  color: #FFFFFF !important;
+}
+
+/* ==============================
+   FOLDER UI
+   ============================== */
+
+.dashboard__folder {
+  width: 100%;
+  max-width: 780px;
+}
+
+/* Tabs row */
+.dashboard__tabs {
+  display: flex;
+  gap: 0;
+  align-items: flex-end;
+}
+
+/* Individual tab */
+.dashboard__tab {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 20px;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-bottom: none;
+  border-radius: 10px 10px 0 0;
+  cursor: pointer;
+  transition: background 0.25s, border-color 0.25s;
+  position: relative;
+}
+
+.dashboard__tab:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.dashboard__tab--active {
+  background: rgba(30, 55, 75, 0.6) !important;
+  border-color: rgba(255, 255, 255, 0.15) !important;
+  z-index: 2;
+}
+
+/* Hide the bottom border of active tab so it merges with the body */
+.dashboard__tab--active::after {
+  content: '';
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: rgba(30, 55, 75, 0.6);
+}
+
+.dashboard__tab-icon {
+  font-size: 16px !important;
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.dashboard__tab--active .dashboard__tab-icon {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.dashboard__tab-label {
+  font-family: 'Space Grotesk', sans-serif !important;
+  font-size: 11px !important;
+  font-weight: 500 !important;
+  letter-spacing: 1.5px !important;
+  color: rgba(255, 255, 255, 0.35) !important;
+  white-space: nowrap;
+}
+
+.dashboard__tab--active .dashboard__tab-label {
+  color: rgba(255, 255, 255, 0.9) !important;
+}
+
+/* ==============================
+   FOLDER BODY
+   ============================== */
+
+.dashboard__folder-body {
+  background: rgba(30, 55, 75, 0.6);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 0 12px 12px 12px;
+  padding: 36px 40px;
+  min-height: 280px;
+}
+
+/* ==============================
+   TOOL CONTENT
+   ============================== */
+
+.dashboard__tool-content {
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+}
+
+.dashboard__tool-left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.dashboard__tool-code {
+  font-family: 'Space Grotesk', monospace !important;
+  font-size: 11px !important;
+  letter-spacing: 3px !important;
+  color: rgba(255, 255, 255, 0.3) !important;
+  margin-bottom: 10px !important;
+}
+
+.dashboard__tool-title {
+  font-family: 'Space Grotesk', sans-serif !important;
+  font-size: 20px !important;
+  font-weight: 600 !important;
+  letter-spacing: 2px !important;
+  color: #FFFFFF !important;
+  margin-bottom: 18px !important;
+}
+
+.dashboard__tool-description {
+  font-family: 'Space Grotesk', sans-serif !important;
+  font-size: 13px !important;
+  font-weight: 300 !important;
+  line-height: 1.7 !important;
+  letter-spacing: 0.5px !important;
+  color: rgba(255, 255, 255, 0.55) !important;
+}
+
+/* Right panel — preview */
+.dashboard__tool-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 20px;
+  min-width: 220px;
+}
+
+.dashboard__tool-preview {
+  width: 200px;
+  height: 140px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.dashboard__tool-preview-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* CTA Button */
+.dashboard__tool-btn {
+  font-family: 'Space Grotesk', sans-serif !important;
+  font-size: 12px !important;
+  font-weight: 500 !important;
+  letter-spacing: 2px !important;
+  color: #FFFFFF !important;
+  text-transform: none !important;
+  padding: 10px 24px !important;
+  border: 1px solid rgba(255, 255, 255, 0.2) !important;
+  border-radius: 6px !important;
+  background: transparent !important;
+  transition: background 0.25s, border-color 0.25s !important;
+}
+
+.dashboard__tool-btn:hover {
+  background: rgba(255, 255, 255, 0.08) !important;
+  border-color: rgba(255, 255, 255, 0.4) !important;
+}
+
+/* ==============================
+   RESPONSIVE
+   ============================== */
+
+@media (max-width: 768px) {
+  .dashboard__tool-content {
+    flex-direction: column;
+  }
+
+  .dashboard__tool-right {
+    align-items: flex-start;
+    min-width: unset;
+    width: 100%;
+  }
+
+  .dashboard__tool-preview {
+    width: 100%;
+    height: 160px;
+  }
+
+  .dashboard__tabs {
+    overflow-x: auto;
+  }
+
+  .dashboard__tab {
+    padding: 8px 14px;
+  }
+
+  .dashboard__tab-label {
+    font-size: 10px !important;
+  }
+
+  .dashboard__folder-body {
+    padding: 24px 20px;
+  }
+
+  .dashboard__greeting-question {
+    font-size: 18px !important;
+  }
+}

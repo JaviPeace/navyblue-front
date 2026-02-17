@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box, Container, Typography, Grid } from '@mui/material';
+import { Box, Container, Typography } from '@mui/material';
 import CheckBoxOutlinedIcon from '@mui/icons-material/CheckBoxOutlined';
 import CloseIcon from '@mui/icons-material/Close';
 import './TargetAudienceSection.css';
@@ -26,10 +26,10 @@ const TargetAudienceSection = () => {
         </Typography>
 
         {/* Cards Grid */}
-        <Grid container spacing={3}>
+        <Box className="target-cards-grid">
           {/* For You Card */}
-          <Grid item xs={12} md={6}>
-            <Box className="target-card target-card--positive">
+          <Box className="target-card">
+            <Box className="target-card__inner">
               <Typography variant="h4" className="target-card__title">
                 ES PARA TI SI...
               </Typography>
@@ -42,11 +42,11 @@ const TargetAudienceSection = () => {
                 ))}
               </Box>
             </Box>
-          </Grid>
+          </Box>
 
           {/* Not For You Card */}
-          <Grid item xs={12} md={6}>
-            <Box className="target-card target-card--negative">
+          <Box className="target-card">
+            <Box className="target-card__inner">
               <Typography variant="h4" className="target-card__title">
                 NO ES PARA TI SI...
               </Typography>
@@ -59,12 +59,12 @@ const TargetAudienceSection = () => {
                 ))}
               </Box>
             </Box>
-          </Grid>
-        </Grid>
+          </Box>
+        </Box>
 
         {/* Bottom Label */}
-        <Typography className="target-audience-section__label">
-          CASE : IDENTIFYING
+        <Typography variant="body2" className="target-audience-section__label">
+          STATUS: OPERATIONAL
         </Typography>
       </Container>
     </Box>

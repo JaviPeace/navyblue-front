@@ -1,5 +1,4 @@
 .landing-page {
-  min-height: 100vh;
   background-color: #0a1929;
   position: relative;
   overflow: hidden;
@@ -19,4 +18,51 @@
 .landing-page__content {
   position: relative;
   z-index: 1;
+  overflow: hidden;
 }
+
+/* Blur element - Left side between sections */
+.landing-page__blur-left {
+  position: absolute;
+  left: -33%;
+  top: 27%;
+  width: 500px;
+  height: 500px;
+  pointer-events: none;
+  z-index: 2;
+}
+
+/* Blur element - Right side for HowItWorks */
+.landing-page__blur-how-it-works {
+  position: absolute;
+  right: -15%;
+  top: 48%;
+  width: 300px;
+  height: 300px;
+  pointer-events: none;
+  z-index: 2;
+}
+
+/* Blur element - Centered between Video and TargetAudience */
+.landing-page__blur-video {
+  position: absolute;
+  left: 50%;
+  top: 70%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 100px;
+  pointer-events: none;
+  z-index: 2;
+}
+
+/* Blur element - Right side in Footer */
+.landing-page__blur-footer {
+  position: absolute;
+  right: 40%;
+  bottom: -175px;
+  width: 350px;
+  height: 350px;
+  pointer-events: none;
+  z-index: 2;
+}
+

@@ -1,6 +1,5 @@
 .footer {
   padding: 32px 0;
-  border-top: 1px solid rgba(0, 217, 255, 0.1);
 }
 
 .footer__content {
@@ -21,7 +20,8 @@
 }
 
 .footer__social-button:hover {
-  color: #00d9ff;
+  color: #495B69;
+;
 }
 
 .footer__copyright {

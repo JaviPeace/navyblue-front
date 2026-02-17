@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import {
   AppBar,
   Toolbar,
@@ -27,6 +28,7 @@ const Navbar = () => {
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down('md'));
   const [drawerOpen, setDrawerOpen] = useState(false);
+  const navigate = useNavigate();
 
   const toggleDrawer = (open) => () => {
     setDrawerOpen(open);
@@ -77,6 +79,7 @@ const Navbar = () => {
                     variant="contained"
                     size="small"
                     className="navbar__btn-primary"
+                    onClick={() => navigate('/login')}
                   >
                     INICIAR SESIÓN
                   </Button>

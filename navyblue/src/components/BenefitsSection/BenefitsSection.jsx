@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box, Container, Typography, Grid } from '@mui/material';
+import { Box, Container, Typography } from '@mui/material';
 import './BenefitsSection.css';
 
 const benefits = [
@@ -27,12 +27,14 @@ const benefits = [
 
 const BenefitCard = ({ title, description }) => (
   <Box className="benefit-card">
-    <Typography variant="h4" className="benefit-card__title">
-      {title}
-    </Typography>
-    <Typography variant="body2" className="benefit-card__description">
-      {description}
-    </Typography>
+    <Box className="benefit-card__inner">
+      <Typography variant="h4" className="benefit-card__title">
+        {title}
+      </Typography>
+      <Typography variant="body1" className="benefit-card__description">
+        {description}
+      </Typography>
+    </Box>
   </Box>
 );
 
@@ -54,13 +56,11 @@ const BenefitsSection = () => {
         </Box>
 
         {/* Benefits Grid */}
-        <Grid container spacing={3}>
+        <Box className="benefits-grid">
           {benefits.map((benefit, index) => (
-            <Grid item xs={12} md={6} key={index}>
-              <BenefitCard title={benefit.title} description={benefit.description} />
-            </Grid>
+            <BenefitCard key={index} title={benefit.title} description={benefit.description} />
           ))}
-        </Grid>
+        </Box>
       </Container>
     </Box>
   );

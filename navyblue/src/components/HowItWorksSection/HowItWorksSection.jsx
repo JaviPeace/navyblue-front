@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box, Container, Typography, Grid } from '@mui/material';
+import { Box, Container, Typography } from '@mui/material';
 import DescriptionIcon from '@mui/icons-material/Description';
 import HandshakeIcon from '@mui/icons-material/Handshake';
 import RocketLaunchIcon from '@mui/icons-material/RocketLaunch';
@@ -34,7 +34,7 @@ const StepCard = ({ icon: Icon, title, description, stepNumber }) => (
     <Typography variant="h4" className="step-card__title">
       {title}
     </Typography>
-    <Typography variant="body2" className="step-card__description">
+    <Typography variant="body1" className="step-card__description">
       {description}
     </Typography>
   </Box>
@@ -50,18 +50,17 @@ const HowItWorksSection = () => {
         </Typography>
 
         {/* Steps Grid */}
-        <Grid container spacing={4}>
+        <Box className="steps-grid">
           {steps.map((step, index) => (
-            <Grid item xs={12} md={4} key={index}>
-              <StepCard
-                icon={step.icon}
-                title={step.title}
-                description={step.description}
-                stepNumber={index + 1}
-              />
-            </Grid>
+            <StepCard
+              key={index}
+              icon={step.icon}
+              title={step.title}
+              description={step.description}
+              stepNumber={index + 1}
+            />
           ))}
-        </Grid>
+        </Box>
       </Container>
     </Box>
   );

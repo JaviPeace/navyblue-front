@@ -9,30 +9,37 @@ const VideoSection = () => {
       <Container maxWidth="lg">
         {/* Section Header */}
         <Box className="video-section__header">
-          <Typography variant="h3" className="video-section__title">
-            MIRA LA MAGIA EN ACCIÓN
-          </Typography>
+          <Box className="video-section__header-left">
+            <Typography variant="body2" className="video-section__label">
+              INITIALIZING...
+            </Typography>
+            <Typography variant="h2" className="video-section__title">
+              MIRA LA MAGIA EN ACCIÓN
+            </Typography>
+          </Box>
           <Typography className="video-section__subtitle">
-            // EXPLORA LA PLATAFORMA DE NAVYBLUE Y DESCUBRE CÓMO AUTOMATIZAMOS TUS PROCESOS
+            {'// EXPLORA LA PLATAFORMA DE NAVYBLUE Y DESCUBRE CÓMO AUTOMATIZAMOS TUS PROCESOS'}
           </Typography>
         </Box>
 
-        {/* Video Container */}
-        <Box className="video-section__container">
-          <Box className="video-section__video-wrapper">
-            {/* Video Placeholder */}
-            <Box className="video-section__video-placeholder">
-              <IconButton className="video-section__play-button" aria-label="Play video">
-                <PlayArrowIcon className="video-section__play-icon" />
-              </IconButton>
+        {/* Main Video Container with Corner Decorations */}
+        <Box className="video-section__main">
+          <Box className="video-section__container">
+            <Box className="video-section__container-inner">
+              {/* Video Placeholder */}
+              <Box className="video-section__video-placeholder">
+                <IconButton className="video-section__play-button" aria-label="Play video">
+                  <PlayArrowIcon className="video-section__play-icon" />
+                </IconButton>
+              </Box>
             </Box>
+          </Box>
 
-            {/* Video Metadata */}
-            <Box className="video-section__metadata">
-              <Typography className="video-section__metadata-text">
-                REC 00:00
-              </Typography>
-            </Box>
+          {/* Footer Status Area */}
+          <Box className="video-section__footer">
+            <Typography variant="body2" className="video-section__status">
+              SIGNAL: STABLE
+            </Typography>
           </Box>
         </Box>
       </Container>
