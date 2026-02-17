@@ -61,9 +61,10 @@
 .benefit-card {
   position: relative;
   padding: 0;
-  background-color: rgba(10, 25, 41, 0.4);
+  background-color: rgba(10, 25, 41, 0.95);
   border: 1px solid rgba(73, 91, 105, 0.15);
   transition: background-color 0.3s ease, border-color 0.3s ease;
+  z-index: 10;
 }
 
 /* Corner bracket accents using pseudo-elements */
@@ -146,7 +147,7 @@
 
 /* Hover state */
 .benefit-card:hover {
-  background-color: rgba(73, 91, 105, 0.08);
+  background-color: rgba(73, 91, 105, 0.95);
   border-color: rgba(73, 91, 105, 0.25);
 }
 

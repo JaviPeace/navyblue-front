@@ -24,6 +24,7 @@
   font-family: 'Space Grotesk', sans-serif;
   letter-spacing: 0.2em;
   text-transform: uppercase;
+  z-index: 4;
 }
 
 /* Section Title */
@@ -33,6 +34,7 @@
 }
 
 .features-section__title-line1 {
+  position: relative;
   color: #495B69;
   margin-bottom: 8px;
   font-family: 'Space Grotesk', sans-serif;
@@ -42,6 +44,7 @@
   line-height: 105%;
   letter-spacing: -0.06em;
   text-align: center;
+  z-index: 10;
 }
 
 @media (max-width: 900px) {
@@ -51,6 +54,7 @@
 }
 
 .features-section__title-line2 {
+  position: relative;
   color: #ccd0cf;
   margin-bottom: 32px;
   font-family: 'Space Grotesk', sans-serif;
@@ -60,11 +64,13 @@
   line-height: 105%;
   letter-spacing: -0.02em;
   text-align: center;
+  z-index: 10;
 }
 
 @media (max-width: 900px) {
   .features-section__title-line2 {
     font-size: 1.5rem;
+    z-index: 10;
   }
 }
 
@@ -93,9 +99,10 @@
   position: relative;
   padding: 0;
   height: 100%;
-  background-color: rgba(10, 25, 41, 0.4);
+  background-color: rgba(10, 25, 41, 0.95);
   border: 1px solid rgba(73, 91, 105, 0.15);
   transition: background-color 0.3s ease, border-color 0.3s ease;
+  z-index: 10;
 }
 
 /* Corner bracket accents */
@@ -163,8 +170,8 @@
 }
 
 .feature-card:hover {
-  background-color: rgba(73, 91, 105, 0.08);
-  border-color: rgba(73, 91, 105, 0.25);
+  background-color: rgba(73, 91, 105, 0.95);
+  border-color: rgba(73, 91, 105, 0.95);
 }
 
 .feature-card:hover::before,

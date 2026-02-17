@@ -6,6 +6,8 @@ import TableChartIcon from '@mui/icons-material/TableChart';
 import MicIcon from '@mui/icons-material/Mic';
 import './DashboardPage.css';
 
+const papelBg = `${process.env.PUBLIC_URL}/papel.png`;
+
 /**
  * ============================================
  *  TOOLS CONFIGURATION
@@ -54,6 +56,12 @@ const ToolTab = ({ tool, isActive, onClick }) => {
     <Box
       className={`dashboard__tab ${isActive ? 'dashboard__tab--active' : ''}`}
       onClick={onClick}
+      sx={isActive ? {
+        backgroundImage: `url(${process.env.PUBLIC_URL}/papel.png)`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat',
+      } : {}}
     >
       <Icon className="dashboard__tab-icon" />
       <Typography className="dashboard__tab-label">{tool.title}</Typography>
@@ -130,7 +138,7 @@ const DashboardPage = () => {
       </Box>
 
       {/* Main Content */}
-      <Container maxWidth="md" className="dashboard__container">
+      <Container maxWidth="lg" className="dashboard__container">
         {/* Greeting */}
         <Box className="dashboard__greeting">
           <Typography className="dashboard__greeting-hello">HOLA {userName.toUpperCase()},</Typography>
@@ -138,22 +146,39 @@ const DashboardPage = () => {
         </Box>
 
         {/* Folder UI */}
-        <Box className="dashboard__folder">
-          {/* Tabs */}
-          <Box className="dashboard__tabs">
-            {tools.map((tool, index) => (
-              <ToolTab
-                key={tool.id}
-                tool={tool}
-                isActive={index === activeIndex}
-                onClick={() => setActiveIndex(index)}
-              />
-            ))}
+        <Box className="dashboard__folder-wrapper">
+          {/* Background shadow folder */}
+          <Box className="dashboard__folder-bg">
+            <Box className="dashboard__folder-bg-tabs" />
+            <Box className="dashboard__folder-bg-body" />
           </Box>
 
-          {/* Folder Body */}
-          <Box className="dashboard__folder-body">
-            <ToolContent tool={tools[activeIndex]} onNavigate={navigate} />
+          {/* Main folder */}
+          <Box className="dashboard__folder">
+            {/* Tabs */}
+            <Box className="dashboard__tabs">
+              {tools.map((tool, index) => (
+                <ToolTab
+                  key={tool.id}
+                  tool={tool}
+                  isActive={index === activeIndex}
+                  onClick={() => setActiveIndex(index)}
+                />
+              ))}
+            </Box>
+
+            {/* Folder Body */}
+            <Box
+              className="dashboard__folder-body"
+              sx={{
+                backgroundImage: `url(${papelBg})`,
+                backgroundSize: 'cover',
+                backgroundPosition: 'center',
+                backgroundRepeat: 'no-repeat',
+              }}
+            >
+              <ToolContent tool={tools[activeIndex]} onNavigate={navigate} />
+            </Box>
           </Box>
         </Box>
       </Container>

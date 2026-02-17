@@ -22,12 +22,12 @@ const LoginPage = () => {
 
       {/* Decorative spinner - left */}
       <Box className="login__spinner">
-        {[...Array(12)].map((_, i) => (
+        {[...Array(24)].map((_, i) => (
           <Box
             key={i}
             className="login__spinner-dot"
             sx={{
-              transform: `rotate(${i * 30}deg) translateY(-60px)`,
+              transform: `rotate(${i * 15}deg) translateY(-170px)`,
             }}
           />
         ))}

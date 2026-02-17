@@ -1,6 +1,7 @@
 import React from 'react';
 import { Box } from '@mui/material';
 import BlurBlob from '../components/BlurryElement/blurryElement';
+import DotGrid from '../components/DotGrid/dotgrid';
 import {
   HeroSection,
   BenefitsSection,
@@ -30,6 +31,10 @@ const LandingPage = () => {
         </Box>
     
         <FeaturesSection />
+        
+        <Box className="landing-page__dotgrid">
+          <DotGrid />
+        </Box>
         
         {/* Blur element for HowItWorks - Right side */}
         <Box className="landing-page__blur-how-it-works">

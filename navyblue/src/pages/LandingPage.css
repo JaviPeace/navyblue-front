@@ -29,7 +29,7 @@
   width: 500px;
   height: 500px;
   pointer-events: none;
-  z-index: 2;
+  z-index: 4;
 }
 
 /* Blur element - Right side for HowItWorks */
@@ -66,3 +66,11 @@
   z-index: 2;
 }
 
+/* Dot grid - Left side between sections */
+.landing-page__dotgrid {
+  position: absolute;
+  top: 27%;
+  width: 100%;
+  pointer-events: none;
+  z-index: 0;
+}
