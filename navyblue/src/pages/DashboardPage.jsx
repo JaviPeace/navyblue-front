@@ -106,11 +106,11 @@ const DashboardPage = () => {
 
       {/* Decorative spinner - left */}
       <Box className="dashboard__spinner">
-        {[...Array(12)].map((_, i) => (
+        {[...Array(18)].map((_, i) => (
           <Box
             key={i}
             className="dashboard__spinner-dot"
-            sx={{ transform: `rotate(${i * 30}deg) translateY(-60px)` }}
+            sx={{ transform: `rotate(${i * 20}deg) translateY(-60px)` }}
           />
         ))}
       </Box>

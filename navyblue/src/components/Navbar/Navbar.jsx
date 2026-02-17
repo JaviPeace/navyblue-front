@@ -150,6 +150,7 @@ const Navbar = () => {
             variant="contained"
             fullWidth
             className="navbar__drawer-btn-primary"
+            onClick={() => navigate('/login')}
           >
             INICIAR SESIÓN
           </Button>
