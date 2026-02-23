@@ -4,7 +4,7 @@
   display: flex;
   align-items: center;
   overflow: hidden;
-  padding-top: 180px;
+  padding-top: 200px; 
   padding-bottom: 96px;
 }
 
@@ -201,7 +201,7 @@
 
 .hero__btn-primary {
   background-color: #495B69;
-  color: #0a1929;
+  color: #CCD0CF !important;
   font-weight: 600;
   font-size: 0.8125rem;
   letter-spacing: 0.05em;
@@ -209,16 +209,12 @@
   border-radius: 0;
 }
 
-.hero__btn-primary::before {
-  content: "> ";
-}
-
 .hero__btn-primary:hover {
   background-color: rgba(255, 255, 255, 0.05);
 }
 
 .hero__btn-secondary {
-  color: white;
+  color: #CCD0CF !important;
   border-color: rgba(255, 255, 255, 0.3);
   font-size: 0.8125rem;
   letter-spacing: 0.05em;

@@ -54,10 +54,6 @@
   border-radius: 0;
 }
 
-.cta-section__button::before {
-  content: "> ";
-}
-
 .cta-section__button:hover {
   background-color: rgba(255, 255, 255, 0.05);
 }

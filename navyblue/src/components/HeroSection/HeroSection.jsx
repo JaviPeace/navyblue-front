@@ -11,7 +11,7 @@ const HeroSection = () => {
   const logos = Array(5).fill(null);
 
   return (
-    <Box className="hero">
+    <Box className="hero" id="hero">
       {/* Blurry Decorative Element - Top Right */}
       <Box className="hero__blur-container">
         <BlurBlob />
@@ -61,11 +61,11 @@ const HeroSection = () => {
 
           {/* CTA Buttons */}
           <Box className="hero__buttons">
-            <Button variant="contained" size="large" className="hero__btn-secondary">
-              CUÉNTANOS TU PROCESO
+            <Button variant="outlined" size="large" className="hero__btn-secondary">
+              {'>'} CUÉNTANOS TU PROCESO
             </Button>
             <Button 
-              variant="outlined" 
+              variant="contained" 
               size="large" 
               className="hero__btn-primary"
               onClick={() => navigate('/login')}

@@ -58,6 +58,23 @@ const Navbar = () => {
                     key={item.label}
                     href={item.href}
                     className="navbar__nav-link"
+                    onClick={e => {
+                      if (item.href.startsWith('#')) {
+                        e.preventDefault();
+                        const id = item.href.replace('#', '');
+                        const el = document.getElementById(id);
+                        if (el) {
+                          const navbar = document.querySelector('.navbar');
+                          const offset = navbar ? navbar.offsetHeight : 0;
+                          let top = el.getBoundingClientRect().top + window.pageYOffset;
+                          // Si es hero, no compensar offset
+                          if (id !== 'hero') {
+                            top = top - offset;
+                          }
+                          window.scrollTo({ top, behavior: 'smooth' });
+                        }
+                      }
+                    }}
                   >
                     {item.label}
                   </a>
@@ -126,7 +143,23 @@ const Navbar = () => {
               key={item.label}
               href={item.href}
               className="navbar__drawer-link"
-              onClick={toggleDrawer(false)}
+              onClick={e => {
+                if (item.href.startsWith('#')) {
+                  e.preventDefault();
+                  const id = item.href.replace('#', '');
+                  const el = document.getElementById(id);
+                  if (el) {
+                    const navbar = document.querySelector('.navbar');
+                    const offset = navbar ? navbar.offsetHeight : 0;
+                    let top = el.getBoundingClientRect().top + window.pageYOffset;
+                    if (id !== 'hero') {
+                      top = top - offset;
+                    }
+                    window.scrollTo({ top, behavior: 'smooth' });
+                  }
+                }
+                setDrawerOpen(false);
+              }}
             >
               <ListItem>
                 <ListItemText

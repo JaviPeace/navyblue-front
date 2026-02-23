@@ -50,7 +50,7 @@ const HowItWorksSection = () => {
         </Typography>
 
         {/* Grid Background */}
-              <Box className="how-it-works-section__grid-bg" />
+          <Box className="how-it-works-section__grid-bg" />
 
         {/* Steps Grid */}
         <Box className="steps-grid">

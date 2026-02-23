@@ -12,14 +12,16 @@
   display: flex;
   align-items: center;
   gap: 8px;
-  box-shadow: 0px 4px 8px 0px rgba(18, 25, 29, 1) inset, 0px -3px 2px 0px rgba(44, 50, 54, 0.61) inset; /* Apply depth directly to the logo container */
+
+
 }
 
 .navbar__logo-img {
   height: 28px;
   width: auto;
-  filter: brightness(0) invert(1);
-  box-shadow: none; /* Remove box-shadow from the border */
+  filter: none;
+  color: rgba(204, 208, 207, 1);
+
 }
 
 .navbar__nav-links {
