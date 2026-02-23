@@ -240,7 +240,7 @@
   position: absolute;
   left: 3vw;
   top: 5vh;
-  color: rgba(204, 208, 207, 1);
+  color: rgba(204, 208, 207, 1) !important;
   font-size: 0.625rem !important;
   font-family: 'Space Grotesk', monospace !important;
   letter-spacing: 0.1em;
@@ -260,7 +260,7 @@
   top: calc(5vh + 30px);
   width: 6px;
   height: 10px;
-  background: rgba(204, 208, 207, 1);
+  background: rgba(204, 208, 207, 1) !important;
   z-index: 1;
 }
 
@@ -275,7 +275,7 @@
   position: absolute;
   right: 3vw;
   top: 47%;
-  color: rgba(204, 208, 207, 1);
+  color: rgba(204, 208, 207, 1) !important;
   font-size: 0.625rem !important;
   font-family: 'Space Grotesk', monospace !important;
   letter-spacing: 0.08em;
@@ -292,7 +292,7 @@
   position: absolute;
   right: 3vw;
   top: calc(50% + 50px);
-  color: rgba(204, 208, 207, 1);
+  color: rgba(204, 208, 207, 1) !important;
   font-size: 0.625rem !important;
   font-family: 'Space Grotesk', monospace !important;
   letter-spacing: 0.08em;
@@ -311,7 +311,7 @@
   position: absolute;
   left: 12vw;
   bottom: 12vh;
-  color:  rgba(204, 208, 207, 1);
+  color:  rgba(204, 208, 207, 1) !important;
   font-size: 0.625rem !important;
   font-family: 'Space Grotesk', monospace !important;
   letter-spacing: 0.08em;
@@ -368,7 +368,7 @@
 }
 
 .login__label-status {
-  color: rgba(193, 205, 209, 1);
+  color: rgba(193, 205, 209, 1) !important;
   font-size: 0.625rem !important;
   font-family: 'Space Grotesk', monospace !important;
   letter-spacing: 0.08em;
@@ -376,7 +376,7 @@
 }
 
 .login__label-copy {
-  color: rgba(193, 205, 209, 1);
+  color: rgba(193, 205, 209, 1) !important;
   font-size: 0.625rem !important;
   font-family: 'Space Grotesk', monospace !important;
   letter-spacing: 0.08em;

@@ -54,7 +54,7 @@ const HeroSection = () => {
           </Box>
 
           {/* Subtitle */}
-          <Typography className="hero__subtitle" sx={{ textAlign: 'center', maxWidth: '500px', mx: 'auto' }}>
+          <Typography className="hero__subtitle" sx={{ textAlign: 'center', maxWidth: '600px', mx: 'auto' }}>
             Automatizamos el trabajo de tu backoffice para escalar volumen sin
             contratar más gente ni gastar tu tiempo en lo repetitivo
           </Typography>

@@ -45,12 +45,14 @@ const theme = createTheme({
       fontSize: '2.25rem',
       letterSpacing: '0.1em',
       textTransform: 'uppercase',
+      color: '#D3D6D6',
     },
     h4: {
       fontWeight: 400,
       fontSize: '1.4 rem',
       letterSpacing: '0.1em',
       textTransform: 'uppercase',
+      color: '#CCD0CF',
     },
     h5: {
       fontWeight: 400,
@@ -61,6 +63,7 @@ const theme = createTheme({
       fontSize: '1.1rem',
       lineHeight: 1.6,
       textAlign: 'inherit',
+      color: '#97A5A8',
     },
     body2: {
       fontSize: '0.875rem',

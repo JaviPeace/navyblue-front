@@ -75,8 +75,7 @@
 }
 
 .features-section__highlight {
-  color: #ccd0cf;
-;
+  color: #ccd0cf !important;
   font-weight: 600;
 }
 

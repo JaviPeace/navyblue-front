@@ -35,7 +35,7 @@
 }
 
 .benefits-section__title {
-  color: white;
+  color: #D3D6D6;
   font-weight: 400;
   letter-spacing: 0.15em;
   font-size: 1.4rem;
@@ -160,7 +160,7 @@
 
 /* Card content */
 .benefit-card__title {
-  color: white;
+  color: #CCD0CF;
   margin-bottom: 16px;
   line-height: 1.4;
 }
