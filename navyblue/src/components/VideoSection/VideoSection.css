@@ -30,7 +30,7 @@
 .video-section__label {
   color: rgba(255, 255, 255, 0.4);
   font-size: 0.625rem;
-  font-family: 'Space Grotesk', sans-serif;
+  font-family: 'Space Grotesk';
   letter-spacing: 0.15em;
   text-transform: uppercase;
 }
@@ -40,7 +40,7 @@
   font-size: 2rem;
   font-weight: 600;
   letter-spacing: 0.08em;
-  font-family: 'Space Grotesk', sans-serif;
+  font-family: 'Space Grotesk';
   text-transform: uppercase;
 }
 
@@ -53,7 +53,7 @@
 .video-section__subtitle {
   color: rgba(255, 255, 255, 0.4);
   font-size: 0.625rem;
-  font-family: 'Space Grotesk', sans-serif;
+  font-family: 'Space Grotesk';
   letter-spacing: 0.1em;
   text-align: right;
   max-width: 530px;
@@ -201,7 +201,7 @@
 .video-section__status {
   color: rgba(255, 255, 255, 0.4);
   font-size: 0.625rem;
-  font-family: 'Space Grotesk', sans-serif;
+  font-family: 'Space Grotesk';
   letter-spacing: 0.15em;
   text-transform: uppercase;
 }

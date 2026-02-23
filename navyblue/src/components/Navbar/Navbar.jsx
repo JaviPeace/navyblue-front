@@ -37,7 +37,7 @@ const Navbar = () => {
   const Logo = () => (
     <Box className="navbar__logo">
       <img 
-        src="/logo_completo.png" 
+        src="/logo_navyblue.png" 
         alt="NavyBlue" 
         className="navbar__logo-img"
       />
@@ -70,14 +70,14 @@ const Navbar = () => {
                 <>
                   <Button
                     variant="outlined"
-                    size="small"
+                    // size="small"
                     className="navbar__btn-outline"
                   >
                     CREAR CUENTA
                   </Button>
                   <Button
                     variant="contained"
-                    size="small"
+                    // size="small"
                     className="navbar__btn-primary"
                     onClick={() => navigate('/login')}
                   >

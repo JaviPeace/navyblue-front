@@ -63,7 +63,7 @@ const LoginPage = () => {
       <Box className="login__card" component="form" onSubmit={handleSubmit}>
         {/* Sailboat watermark */}
         <Box className="login__watermark">
-          <img src="/barco.png" alt="" className="login__watermark-img" />
+          <img src="/fondo.png" alt="" className="login__watermark-img" />
         </Box>
 
         <Box className="login__fields">

@@ -49,6 +49,9 @@ const HowItWorksSection = () => {
           ¿CÓMO FUNCIONA?
         </Typography>
 
+        {/* Grid Background */}
+              <Box className="how-it-works-section__grid-bg" />
+
         {/* Steps Grid */}
         <Box className="steps-grid">
           {steps.map((step, index) => (

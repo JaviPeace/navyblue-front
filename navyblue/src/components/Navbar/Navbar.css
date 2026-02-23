@@ -12,12 +12,14 @@
   display: flex;
   align-items: center;
   gap: 8px;
+  box-shadow: 0px 4px 8px 0px rgba(18, 25, 29, 1) inset, 0px -3px 2px 0px rgba(44, 50, 54, 0.61) inset; /* Apply depth directly to the logo container */
 }
 
 .navbar__logo-img {
   height: 28px;
   width: auto;
   filter: brightness(0) invert(1);
+  box-shadow: none; /* Remove box-shadow from the border */
 }
 
 .navbar__nav-links {
@@ -27,16 +29,16 @@
 }
 
 .navbar__nav-link {
-  color: rgba(255, 255, 255, 0.7);
+  color: #495B69;
   text-decoration: none;
-  font-size: 0.75rem;
-  font-weight: 500;
+  font-size: 0.9rem;
+  font-weight: 400;
   letter-spacing: 0.1em;
   transition: color 0.2s;
 }
 
 .navbar__nav-link:hover {
-  color: #495B69;
+  color: #CCD0CF;
 ;
 }
 
@@ -47,12 +49,12 @@
 }
 
 .navbar__btn-outline {
-  color: #CCD0CF;
+  color: #CCD0CF !important;
   border-color: rgba(255, 255, 255, 0.3);
+  font-weight: 100; 
   font-size: 0.75rem;
   letter-spacing: 0.05em;
   padding: 6px 16px;
-  text-transform: uppercase;
 }
 
 .navbar__btn-outline:hover {
@@ -61,23 +63,22 @@
 }
 
 .navbar__btn-primary {
-  background-color: #495B69;
-  color: #CCD0CF;
+  background-color: #CCD0CF;
   font-size: 0.75rem;
-  font-weight: 600;
+  font-weight: 400; 
   letter-spacing: 0.05em;
   padding: 6px 16px;
-  text-transform: uppercase;
 }
 
 .navbar__btn-primary:hover {
-  border-color: rgba(255, 255, 255, 0.5);
-  background-color: rgba(255, 255, 255, 0.5);
+  font-weight: 400;
+  /* border-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.5); */
 }
 
-.navbar__menu-button {
+/* .navbar__menu-button {
   color: white;
-}
+} */
 
 /* Drawer Styles */
 .navbar__drawer-paper {
@@ -94,9 +95,9 @@
   /* border-bottom: 1px solid rgba(0, 217, 255, 0.1); */
 }
 
-.navbar__drawer-close {
+/* .navbar__drawer-close {
   color: white;
-}
+} */
 
 .navbar__drawer-list {
   padding-top: 16px;

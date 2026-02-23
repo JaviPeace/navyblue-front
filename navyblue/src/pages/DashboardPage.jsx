@@ -102,7 +102,7 @@ const DashboardPage = () => {
   return (
     <Box className="dashboard">
       {/* Grid Background */}
-      <Box className="dashboard__grid-bg" />
+      {/* <Box className="dashboard__grid-bg" /> */}
 
       {/* Decorative spinner - left */}
       <Box className="dashboard__spinner">

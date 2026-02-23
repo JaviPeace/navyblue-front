@@ -18,7 +18,7 @@ const LandingPage = () => {
   return (
     <Box className="landing-page">
       {/* Global background grid pattern */}
-      <Box className="landing-page__grid-bg" />
+      {/* <Box className="landing-page__grid-bg" /> */}
 
       {/* Content */}
       <Box className="landing-page__content">
@@ -45,6 +45,10 @@ const LandingPage = () => {
         <VideoSection />
         
         {/* Blur element between Video and TargetAudience - Left side */}
+
+         {/* Grid Background */}
+          <Box className="end_section__grid-bg" />
+
         <Box className="landing-page__blur-video">
           <BlurBlob />
         </Box>

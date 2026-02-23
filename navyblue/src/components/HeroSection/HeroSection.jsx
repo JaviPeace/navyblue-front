@@ -47,7 +47,7 @@ const HeroSection = () => {
           {/* Sailboat Icon */}
           <Box className="hero__sailboat-bg">
             <img 
-              src="/barco.png" 
+              src="/fondo.png" 
               alt="" 
               className="hero__sailboat-icon"
             />
@@ -61,13 +61,13 @@ const HeroSection = () => {
 
           {/* CTA Buttons */}
           <Box className="hero__buttons">
-            <Button variant="contained" size="large" className="hero__btn-primary">
+            <Button variant="contained" size="large" className="hero__btn-secondary">
               CUÉNTANOS TU PROCESO
             </Button>
             <Button 
               variant="outlined" 
               size="large" 
-              className="hero__btn-secondary"
+              className="hero__btn-primary"
               onClick={() => navigate('/login')}
             >
               [ INICIAR SESIÓN ]
@@ -83,7 +83,7 @@ const HeroSection = () => {
               {logos.map((_, index) => (
                 <Box key={index} className="hero__trust-logo">
                   <img 
-                    src="/logo_completo.png" 
+                    src="/logo_navyblue.png" 
                     alt="NavyBlue" 
                     className="hero__trust-logo-img"
                   />

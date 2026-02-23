@@ -9,7 +9,7 @@ const TrustSection = () => {
   const LogoPlaceholder = () => (
     <Box className="trust-section__logo">
       <img 
-        src="/logo_completo.png" 
+        src="/logo_navyblue.png" 
         alt="NavyBlue" 
         className="trust-section__logo-img"
       />

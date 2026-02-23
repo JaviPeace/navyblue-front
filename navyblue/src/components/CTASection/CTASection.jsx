@@ -7,6 +7,8 @@ const CTASection = () => {
     <Box className="cta-section">
       <Container maxWidth="md">
         <Box className="cta-section__content">
+          {/* Grid Background */}
+          <Box className="cta-section__grid-bg" />
           {/* Title */}
           <Typography variant="h3" className="cta-section__title">
             ¿LISTO PARA EVOLUCIONAR?

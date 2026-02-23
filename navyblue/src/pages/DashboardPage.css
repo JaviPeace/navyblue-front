@@ -10,7 +10,7 @@
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  font-family: 'Space Grotesk', sans-serif;
+  font-family: 'Space Grotesk';
 }
 
 /* Grid background */
@@ -210,7 +210,7 @@
 }
 
 .dashboard__greeting-hello {
-  font-family: 'Space Grotesk', sans-serif !important;
+  font-family: 'Space Grotesk' !important;
   font-size: 14px !important;
   font-weight: 400 !important;
   letter-spacing: 4px !important;
@@ -219,7 +219,7 @@
 }
 
 .dashboard__greeting-question {
-  font-family: 'Space Grotesk', sans-serif !important;
+  font-family: 'Space Grotesk' !important;
   font-size: 24px !important;
   font-weight: 600 !important;
   letter-spacing: 3px !important;
@@ -310,7 +310,7 @@
 }
 
 .dashboard__tab-label {
-  font-family: 'Space Grotesk', sans-serif !important;
+  font-family: 'Space Grotesk' !important;
   font-size: 11px !important;
   font-weight: 500 !important;
   letter-spacing: 1.5px !important;
@@ -361,7 +361,7 @@
 }
 
 .dashboard__tool-title {
-  font-family: 'Space Grotesk', sans-serif !important;
+  font-family: 'Space Grotesk' !important;
   font-size: 30px !important;
   font-weight: 600 !important;
   letter-spacing: 2px !important;
@@ -370,7 +370,7 @@
 }
 
 .dashboard__tool-description {
-  font-family: 'Space Grotesk', sans-serif !important;
+  font-family: 'Space Grotesk' !important;
   font-size: 18px !important;
   font-weight: 400 !important;
   line-height: 1.6 !important;
@@ -407,7 +407,7 @@
 
 /* CTA Button */
 .dashboard__tool-btn {
-  font-family: 'Space Grotesk', sans-serif !important;
+  font-family: 'Space Grotesk' !important;
   font-size: 12px !important;
   font-weight: 500 !important;
   letter-spacing: 2px !important;

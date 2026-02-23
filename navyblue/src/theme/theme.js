@@ -18,12 +18,12 @@ const theme = createTheme({
       paper: '#0D2137',
     },
     text: {
-      primary: '#CCD0CF',
-      secondary: '#CCD0CF',
+      primary: 'rgba(204, 208, 207, 1)',
+      secondary: 'rgba(204, 208, 207, 1)',
     },
   },
   typography: {
-    fontFamily: '"Space Grotesk", sans-serif',
+    fontFamily: '"Space Grotesk"',
     h1: {
       fontWeight: 300,
       fontSize: '2.5rem',
@@ -66,9 +66,10 @@ const theme = createTheme({
       fontSize: '0.875rem',
       lineHeight: 1.5,
       color: '#8BA3B8',
+      opacity: 0.3,
     },
     button: {
-      fontWeight: 600,
+      fontWeight: 400,
       letterSpacing: '0.05em',
     },
   },
@@ -77,7 +78,6 @@ const theme = createTheme({
       styleOverrides: {
         root: {
           borderRadius: 0,
-          textTransform: 'uppercase',
           padding: '12px 24px',
         },
         contained: {
