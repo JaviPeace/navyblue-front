@@ -8,17 +8,13 @@
   padding-bottom: 96px;
 }
 
-@media (max-width: 900px) {
-  .hero {
-}
-
 .hero__trust {
   margin-top: 0;
   text-align: center;
     padding-top: 64px;
     padding-bottom: 64px;
   }
-}
+
 
 /* Blur Container - Top Right */
 .hero__blur-container {
